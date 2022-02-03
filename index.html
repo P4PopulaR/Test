@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanobiophysics</title>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|Montserrat|Megrim|Antic|Orbitron" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- additional css styles --> 
+    <style>
+      .banner-image {
+        background-image: url('./img/bannerimage.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        height: 64vh;  <!-- this is % of the page covered by the image --> 
+      }
+    </style>
+
+    <style>
+      .navbar{
+        position: fixed;
+        width:100%;
+        transition: background-color 2s;
+        height:60px;
+      }
+    </style>
+
+    <style>
+      .layer {
+        background-color: rgba(240, 240, 240, 0.1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 62vh;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="z-index: 32;">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Biophysics" title="" style="max-width: 60%;min-width: 40% " margin="0"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" span="">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav sf-js-enabled sf-arrows">
+              <a class="nav-link" href="./index.html">Home</a>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="./teaching.html">Teaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./research.html">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./members.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Banner or background Image and text  -->
+    <div class="banner-image d-flex justify-content-center align-items-center">
+          <div class="layer" style="z-index: 0" ;="">
+          </div>
+
+      <div class="content text-center">
+        <h2 class="display-6 text-white" style="font-family: Antic">Experimtntal Biophysics</h2>
+        <br>
+        <br>
+        <h1 class="display-1 text-white" style="font-family: Rajdhani;">Nanobiophysics</h1>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <section id="mainsection">
+    <div class="container my-5 gap-5 d-flex flex-column">
+    <div class="row flex-shrink-0">
+    <div class="col-12" style="color: #2C3E50"><h2>About Us</h2></div>
+    </div>
+    <div class="row flex-fill" style="min-height:0">
+        <div class="col-lg-8 text-justify" style="overflow-y: scroll; font-family: Montserrat; font-size: large; padding-right: 40px">
+          <p>
+          The Computational Biophysics lab focuses on various topics in biological physics, an area that is highly interdisciplinary in nature. We use state-of-the-art computational tools to investigate the molecular structure, dynamics, and fucntion of biomolecules. We extensively use the physics-based Molecular Dynamics simulation technique, which has become an indispensable tool to computationally investigate molecular interactions and dynamics that complement a variety of physics and biophysics experiments. Such computer simulations are useful in many research topics, ranging from biomolecular interactions and drug discovery through in-silico screening to functionalization and interactions of solid-state nanomaterial such as graphene. Current major projects in our lab include dynamics and membrane interactions of viral proteins such as Ebola and Marburg virus proteins VP40 and the SARS-CoV-2 spike protein, and identification of novel antimicrobial compounds against antibiotic resistant pathogens. We collaborate with experimental labs in both academia and industry for coupling the theoretical and computational investigations with various biophysical experiments. 
+         <br> 
+        <br>The research in the lab has been supported by funding from various funding agencies such as NSF, NIH, and industry partners.
+      </p>        
+    </div>
+        <div class="col-4 border overflow-auto" style="padding-left: 1px; padding-right: 1px; padding-top: 2px !important; background-color: #ECECEC;">
+        <div class="card">
+            <div class="card-header">
+              <h6>News and Updates<span class="float-right"><i class="ft-chevron-up"></i></span></h6>
+            </div>
+            <div class="card-body p-0 border scrollbar">
+              <ul class="list-group">
+                <li class="list-group-item news-feed-item-1 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0006291X21012122" target="_blank" class="text-dark"> <span class="font-small-3 news-feed-item-text"><br>Our paper describing possible immune evasion by the Delta variant is now published on BBRC.</span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">September 1, 2021</span>
+                </li>
+
+                <li class="list-group-item news-feed-item-2 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="https://www.biorxiv.org/content/10.1101/2021.08.10.455737v2.abstract" target="_blank" class="text-dark"> <span class="font-small-3 news-feed-item-text">Work on molecular mimicry linking covid-19 and blood clots published on bioRxiv</span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">August 29, 2021</span>
+                </li>
+
+            <!--
+                <li class="list-group-item news-feed-item-img">
+                  <a href="#"><img src="./img/background.jpg" alt="" class="img-fluid"></a>
+                </li>
+            -->
+                <li class="list-group-item news-feed-item-3 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="#" class="text-dark"> <span class="font-small-3 news-feed-item-text">Congratulations to Prabin on receiving the Dissertation Year Fellowship award ! </span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">August 15, 2021</span>
+                </li>
+
+                <li class="list-group-item news-feed-item-4 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="https://news.fiu.edu/2021/covid-19-variants-develop-better-lock-picking-skills-to-invade-human-cells" target="_blank" class="text-dark"> <span class="font-small-3 news-feed-item-text">Coronavirus research highlighted on FIU News: COVID-19 variants develop better lock-picking skills</span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">July 19, 2021</span>
+                </li>
+
+                <li class="list-group-item news-feed-item-5 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="https://pubs.acs.org/doi/10.1021/acs.jpcb.1c01626" target="_blank" class="text-dark"> <span class="font-small-3 news-feed-item-text">Our paper comparing the SARS-CoV-2 variants B.1.1.7 and B.1.351 has been published in JCP</span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">June 10, 2021</span>
+                </li>
+
+                <li class="list-group-item news-feed-item-6 pl-2" style="padding-top: 0px !important; padding-bottom: 0px !important;">
+                  <a href="#" class="text-dark"> <span class="font-small-3 news-feed-item-text">Nisha has recently graduated. She is joining the Cleveland Clinic as a postdoctoral researher. Congratulations, Nisha! </span></a>
+                  <span class="font-small-1 text-muted float-right p-md-2 p-sm-2 news-feed-item-text-time">June 1, 2021</span>
+                </li>
+              </ul>
+              <div class="card-footer p-1">
+                <button class="btn btn-outline-success btn-sm mx-auto">Load More</button>
+              </div>
+            </div>
+        </div>
+      </div> 
+  </div> 
+</div>
+</section>
+<!-- #about -->
+
+<!---===== Carousel ====--->
+
+<div class="container" style="background: #B4B4B4;">
+  <h5 class="text-white" style="font-family: Arial">Research featured on journal covers</h5>
+  <div class="carousel slide multi-item-carousel" id="theCarousel">
+    <div class="carousel-inner row w-100 mx-auto">
+      <div class="carousel-item active col-md-4">
+        <img src="./img/cover5_400px.png" class="img-fluid mx-auto d-block">
+        <p class="text-white text-center" style="font-family: Arial">Structural and Dynamical Differences in the Spike Protein RBD in the SARS-CoV-2 Variants B.1.1.7 and B.1.351</p>
+      </div>
+      <div class="carousel-item col-md-4">
+        <img src="./img/cover3_400px.png" class="img-fluid mx-auto d-block">
+        <p class="text-white text-center" style="font-family: Arial">The Ebola virus protein VP40 hexamer enhances the clustering of PI(4,5)P 2 lipids in the plasma membrane</p>
+      </div>
+      <div class="carousel-item col-md-4">
+        <img src="./img/cover1_400px.png" class="img-fluid mx-auto d-block">
+        <p class="text-white text-center" style="font-family: Arial">Fluorescent protein barrel fluctuations and oxygen diffusion pathways in mCherry</p>
+      </div>
+      <div class="carousel-item col-md-4">
+        <img src="./img/cover2_400px.png" class="img-fluid mx-auto d-block">
+        <p class="text-white text-center" style="font-family: Arial">Molecular Structure and Regulation of P2X Receptors With a Special Emphasis on the Role of P2X2 in the Auditory System</p>
+      </div>
+      <div class="carousel-item col-md-4">
+        <img src="./img/cover4_400px.png" class="img-fluid mx-auto d-block">
+        <p class="text-white text-center" style="font-family: Arial">Blueprints for the Rational Design of Therapeutic Mutacin 1140 Variants (contributed the molecular model)</p>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- ==== End Carousel ====-->
+      <p></p>
+      
+      <div class="p-3 border" style="background-color: #ECECEC; color: #2C3E50;"> 
+          <h3 class="text-center" style="font-family: Arial">Contact</h3>
+          <p class="text-center" style="color: #0D08A8">
+          Popular Pandey, PhD
+          <br>Department of Physics, Florida International University
+          <br>11200 SW 8th ST, CP204, Miami, FL 33199
+          <br>Email: ppand009@fiu.edu | Phone: 305-348-4861
+          
+        </p>
+      </div>
+    
+ 
+ <!-- transition transparent to solid nav bar if scrolled >200px -->   
+    <script type="text/javascript">
+ 
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 200) {
+          nav.classList.add('bg-dark', 'shadow');
+          nav.classList.remove('nav-transparent', 'shadow');
+        } else {
+          nav.classList.add('nav-transparent', 'shadow');
+          nav.classList.remove('bg-dark', 'shadow');
+        }
+      });
+    </script>
+
+</body>
+
+</html>
 
